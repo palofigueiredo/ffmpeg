@@ -1,0 +1,1 @@
+for %%i in (*.avi) do ffmpeg -i "%%i" -codec:v libx264 -pix_fmt yuv420p -profile:v main "%%~ni.mp4"
